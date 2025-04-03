@@ -1,4 +1,4 @@
-#name: Catalog Service
+name: Catalog Service
 
 on:
   push:
@@ -7,14 +7,12 @@ on:
     branches:
       - '**'
 
-
 jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
     env:
       working-directory: ./catalog-service
-      #DOCKER_IMAGE_NAME: ${{ secrets.DOCKERHUB_USERNAME }}/bookstore-catalog-service
     defaults:
       run:
         working-directory: ${{ env.working-directory }}
