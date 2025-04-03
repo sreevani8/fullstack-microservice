@@ -1,5 +1,4 @@
 name: Catalog Service
-
 on:
   push:
     paths:
